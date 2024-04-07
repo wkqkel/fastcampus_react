@@ -1,6 +1,9 @@
 import './App.css'
 import Text from '@shared/Text'
 import Button from './components/shared/Button'
+import Input from './components/shared/Input'
+import TextField from './components/shared/TextField'
+import Alert from './components/shared/Alert'
 
 function App() {
   return (
@@ -32,6 +35,19 @@ function App() {
       <Button color="primary" full disabled>
         클릭해주세요
       </Button>
+      <div style={{ height: 10, width: '100%', background: '#efefef' }}></div>
+      <Input placeholder="로그인" aria-invalid={false} />
+      <Input aria-invalid={true} />
+      <TextField label="아이디" />
+      <TextField label="패스워드" hasError />
+
+      <div style={{ height: 10, width: '100%', background: '#efefef' }}></div>
+      <Alert
+        title="알럿이 떴습니다"
+        description="안녕하세요"
+        onButtonClick={() => {}}
+        open={true}
+      />
     </div>
   )
 }

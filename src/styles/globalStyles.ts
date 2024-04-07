@@ -144,8 +144,16 @@ const resetButton = css`
     line-height: normal;
   }
 `
+
+const zIndex = css`
+  :root {
+    --dimmed-zindex: 10;
+    --alert-zindex: 11;
+  }
+`
 export default css`
   ${resetCss}
   ${resetButton}
   ${colorPalette}
+  ${zIndex}
 `
