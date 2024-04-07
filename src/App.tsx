@@ -5,7 +5,11 @@ import Input from './components/shared/Input'
 import TextField from './components/shared/TextField'
 import Alert from './components/shared/Alert'
 
+import { useAlertContext } from './contexts/AlertContexts'
+
 function App() {
+  const { open } = useAlertContext()
+
   return (
     <div>
       <Text typography="t1" display="block">
@@ -42,12 +46,23 @@ function App() {
       <TextField label="패스워드" hasError />
 
       <div style={{ height: 10, width: '100%', background: '#efefef' }}></div>
-      <Alert
+      {/* <Alert
         title="알럿이 떴습니다"
         description="안녕하세요"
         onButtonClick={() => {}}
         open={true}
-      />
+      /> */}
+      <Button
+        onClick={() => {
+          open({
+            title: '카드신청완료',
+            description: '내역페이지에서 확인해주세요',
+            onButtonClick: () => {},
+          })
+        }}
+      >
+        Alert오픈
+      </Button>
     </div>
   )
 }

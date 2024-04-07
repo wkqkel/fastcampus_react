@@ -8,11 +8,16 @@ import { Global } from '@emotion/react'
 
 import globalStyles from './styles/globalStyles'
 
+import { AlertContextProvider } from './contexts/AlertContexts'
+
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+
 root.render(
   <React.StrictMode>
     <Global styles={globalStyles} />
-    <App />
+    <AlertContextProvider>
+      <App />
+    </AlertContextProvider>
   </React.StrictMode>,
 )
 
