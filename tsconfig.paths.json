@@ -1,9 +1,11 @@
 {
-    "compilerOptions":{
-        "baseUrl":".",
-        "paths":{
-            "@/*":["src/*"],
-            "@components/*":["src/components/*"]
-        }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@styles/*": ["src/styles/*"],
+      "@shared/*": ["src/components/shared/*"]
     }
+  }
 }
