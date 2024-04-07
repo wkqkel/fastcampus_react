@@ -1,11 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
 
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
+
+const bold = css`
+  font-weight: bold;
+`
+const containerStyles = css`
+  background-color: pink;
+  ${bold};
+`
+
+const Button = styled.button`
+  width: 200px;
+  height: 100px;
+  ${bold};
+`
 function App() {
   return (
-    <div className="App">
+    <div className="App" css={containerStyles}>
       <header className="App-header">
+        <Button>스타일버튼</Button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -20,7 +37,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
