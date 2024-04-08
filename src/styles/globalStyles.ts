@@ -126,9 +126,7 @@ const resetCss = css`
     border-collapse: collapse;
     border-spacing: 0;
   }
-`
 
-const resetButton = css`
   button {
     border: none;
     margin: 0;
@@ -143,8 +141,14 @@ const resetButton = css`
 
     line-height: normal;
   }
-`
 
+  a,
+  a:link,
+  a:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+`
 const zIndex = css`
   :root {
     --dimmed-zindex: 10;
@@ -153,7 +157,6 @@ const zIndex = css`
 `
 export default css`
   ${resetCss}
-  ${resetButton}
   ${colorPalette}
   ${zIndex}
 `
