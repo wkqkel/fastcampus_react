@@ -49,6 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:5.1.3"],\
             ["eslint-plugin-react", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:7.34.1"],\
             ["firebase", "npm:10.10.0"],\
+            ["framer-motion", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:11.0.25"],\
             ["lodash", "npm:4.17.21"],\
             ["prettier", "npm:3.2.5"],\
             ["react", "npm:18.2.0"],\
@@ -11367,6 +11368,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["framer-motion", [\
+        ["npm:11.0.25", {\
+          "packageLocation": "./.yarn/cache/framer-motion-npm-11.0.25-95ce7f6271-3cc6d16aa1.zip/node_modules/framer-motion/",\
+          "packageDependencies": [\
+            ["framer-motion", "npm:11.0.25"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:11.0.25", {\
+          "packageLocation": "./.yarn/__virtual__/framer-motion-virtual-22c8d15e15/0/cache/framer-motion-npm-11.0.25-95ce7f6271-3cc6d16aa1.zip/node_modules/framer-motion/",\
+          "packageDependencies": [\
+            ["framer-motion", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:11.0.25"],\
+            ["@emotion/is-prop-valid", null],\
+            ["@types/emotion__is-prop-valid", null],\
+            ["@types/react", "npm:18.2.74"],\
+            ["@types/react-dom", "npm:18.2.24"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:18.2.0"],\
+            ["tslib", "npm:2.6.2"]\
+          ],\
+          "packagePeers": [\
+            "@emotion/is-prop-valid",\
+            "@types/emotion__is-prop-valid",\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["fresh", [\
         ["npm:0.5.2", {\
           "packageLocation": "./.yarn/cache/fresh-npm-0.5.2-ad2bb4c0a2-13ea8b08f9.zip/node_modules/fresh/",\
@@ -16926,6 +16958,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:5.1.3"],\
             ["eslint-plugin-react", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:7.34.1"],\
             ["firebase", "npm:10.10.0"],\
+            ["framer-motion", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:11.0.25"],\
             ["lodash", "npm:4.17.21"],\
             ["prettier", "npm:3.2.5"],\
             ["react", "npm:18.2.0"],\
