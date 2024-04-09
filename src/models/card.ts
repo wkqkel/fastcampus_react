@@ -1,8 +1,8 @@
 export interface Card {
   name: string
-  cropName: string
+  corpName: string
   tags: string[]
-  benifit: string[]
+  benefit: string[]
   promotion?: {
     title: string
     terms: string
