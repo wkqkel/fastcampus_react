@@ -6,6 +6,8 @@ import Flex from '@shared/Flex'
 import Button from './Button'
 import useUser from '../hooks/auth/useUser'
 import { useCallback } from 'react'
+import { signOut } from 'firebase/auth'
+import { auth } from '@/remote/firebase'
 
 function Navbar() {
   const location = useLocation()
@@ -14,9 +16,13 @@ function Navbar() {
 
   const user = useUser()
 
+  const handleLogout = useCallback(() => {
+    signOut(auth)
+  }, [])
+
   const renderButton = useCallback(() => {
     if (user != null) {
-      return <Button>로그아웃</Button>
+      return <Button onClick={handleLogout}>로그아웃</Button>
     }
 
     if (showSignButton) {
@@ -28,7 +34,7 @@ function Navbar() {
     }
 
     return null
-  }, [showSignButton, user])
+  }, [handleLogout, showSignButton, user])
 
   return (
     <Flex align="center" justify="space-between" css={navbarContainerStyles}>
