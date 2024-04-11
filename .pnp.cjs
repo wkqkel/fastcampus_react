@@ -42,6 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.2.74"],\
             ["@types/react-dom", "npm:18.2.24"],\
             ["@types/testing-library__jest-dom", "npm:6.0.0"],\
+            ["@types/validator", "npm:13.11.9"],\
             ["craco-alias", "npm:3.0.1"],\
             ["eslint", "npm:7.32.0"],\
             ["eslint-config-prettier", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:9.1.0"],\
@@ -60,6 +61,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-scripts", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:5.0.1"],\
             ["swiper", "npm:9.4.1"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"],\
+            ["validator", "npm:13.11.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -6613,6 +6615,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-trusted-types-npm-2.0.7-a07fc44f59-8e4202766a.zip/node_modules/@types/trusted-types/",\
           "packageDependencies": [\
             ["@types/trusted-types", "npm:2.0.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/validator", [\
+        ["npm:13.11.9", {\
+          "packageLocation": "./.yarn/cache/@types-validator-npm-13.11.9-ac3f0e748e-c8d53c9e45.zip/node_modules/@types/validator/",\
+          "packageDependencies": [\
+            ["@types/validator", "npm:13.11.9"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -16951,6 +16962,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.2.74"],\
             ["@types/react-dom", "npm:18.2.24"],\
             ["@types/testing-library__jest-dom", "npm:6.0.0"],\
+            ["@types/validator", "npm:13.11.9"],\
             ["craco-alias", "npm:3.0.1"],\
             ["eslint", "npm:7.32.0"],\
             ["eslint-config-prettier", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:9.1.0"],\
@@ -16969,6 +16981,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-scripts", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:5.0.1"],\
             ["swiper", "npm:9.4.1"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"],\
+            ["validator", "npm:13.11.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -19848,6 +19861,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/istanbul-lib-coverage", "npm:2.0.6"],\
             ["convert-source-map", "npm:1.9.0"],\
             ["source-map", "npm:0.7.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["validator", [\
+        ["npm:13.11.0", {\
+          "packageLocation": "./.yarn/cache/validator-npm-13.11.0-f0143e2784-d1e0c27022.zip/node_modules/validator/",\
+          "packageDependencies": [\
+            ["validator", "npm:13.11.0"]\
           ],\
           "linkType": "HARD"\
         }]\

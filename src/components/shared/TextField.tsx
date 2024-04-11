@@ -29,7 +29,7 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
     }
     const handleBlur: FocusEventHandler<HTMLInputElement> = (event) => {
       setFocused(false)
-      onFocus?.(event)
+      onBlur?.(event)
     }
 
     return (
