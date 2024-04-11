@@ -7,7 +7,7 @@ import TestPage from '@pages/Test'
 import CardPage from '@pages/Card'
 import SigninPage from '@pages/Signin'
 import SignupPage from '@pages/Signup'
-import Navbar from '@shared/Nav'
+import Navbar from '@/components/shared/Navbar'
 
 function App() {
   return (
