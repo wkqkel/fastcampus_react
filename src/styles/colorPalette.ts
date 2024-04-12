@@ -18,6 +18,7 @@ export const colors = {
   white: 'var(--white)',
   black: 'var(--black)',
   grey: 'var(--grey)',
+  grey100: 'var(--grey)', // 이런식으로 색상값 넓혀보기
 }
 
 export type Colors = keyof typeof colors
