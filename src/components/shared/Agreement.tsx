@@ -23,7 +23,7 @@ function AgreementTitle({
 }) {
   return (
     <Flex as="li" onClick={(e) => onChange(e, !checked)}>
-      <IconCheck checked={checked} />
+      <IconCheck checked={checked} withCircle={true} />
       <Text bold={true}>{children}</Text>
     </Flex>
   )
@@ -43,7 +43,7 @@ function AgreementDescription({
   return (
     <Flex as="li">
       <Flex onClick={(e) => onChange(e, !checked)}>
-        <IconCheck checked={checked} withCircle={true} />
+        <IconCheck checked={checked} />
         <Text typography="t6">{children}</Text>
       </Flex>
 
