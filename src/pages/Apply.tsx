@@ -3,6 +3,7 @@ import useAppliedCard from '@/components/apply/hooks/useAppliedCard'
 import useApplyCardMutation from '@/components/apply/hooks/useApplyCardMutation'
 import usePollApplyStatus from '@/components/apply/hooks/usePollApplyStatus'
 import useUser from '@/components/hooks/auth/useUser'
+import FullPageLoader from '@/components/shared/FullPageLoader'
 import { useAlertContext } from '@/contexts/AlertContexts'
 import { APPLY_STATUS } from '@/models/apply'
 import { updateApplyCard } from '@/remote/apply'
@@ -85,7 +86,7 @@ function ApplyPage() {
   }
 
   if (readyToPoll || 카드를신청중인가) {
-    return <div>Loading...</div>
+    return <FullPageLoader message="카드를 신청중입니다" />
   }
 
   return (
