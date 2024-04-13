@@ -10,6 +10,7 @@ import SignupPage from '@pages/Signup'
 import Navbar from '@/components/shared/Navbar'
 import PrivateRoute from './components/auth/PrivateRoute'
 import ApplyPage from './pages/Apply'
+import ApplyDone from './pages/ApplyDone'
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path="/card/:id" Component={CardPage} />
         <Route path="/signup" Component={SignupPage} />
 
+        <Route path="/signin" Component={SigninPage} />
+
         <Route
           path="/apply/:id"
           element={
@@ -30,7 +33,14 @@ function App() {
             </PrivateRoute>
           }
         />
-        <Route path="/signin" Component={SigninPage} />
+        <Route
+          path="/apply/done"
+          element={
+            <PrivateRoute>
+              <ApplyDone />
+            </PrivateRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   )

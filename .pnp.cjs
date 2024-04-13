@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.5.2"],\
             ["@types/lodash", "npm:4.17.0"],\
             ["@types/node", "npm:16.18.95"],\
+            ["@types/qs", "npm:6.9.14"],\
             ["@types/react", "npm:18.2.74"],\
             ["@types/react-dom", "npm:18.2.24"],\
             ["@types/testing-library__jest-dom", "npm:6.0.0"],\
@@ -53,6 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["framer-motion", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:11.0.25"],\
             ["lodash", "npm:4.17.21"],\
             ["prettier", "npm:3.2.5"],\
+            ["qs", "npm:6.12.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:18.2.0"],\
             ["react-infinite-scroll-component", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:6.1.0"],\
@@ -16969,6 +16971,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.5.2"],\
             ["@types/lodash", "npm:4.17.0"],\
             ["@types/node", "npm:16.18.95"],\
+            ["@types/qs", "npm:6.9.14"],\
             ["@types/react", "npm:18.2.74"],\
             ["@types/react-dom", "npm:18.2.24"],\
             ["@types/testing-library__jest-dom", "npm:6.0.0"],\
@@ -16983,6 +16986,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["framer-motion", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:11.0.25"],\
             ["lodash", "npm:4.17.21"],\
             ["prettier", "npm:3.2.5"],\
+            ["qs", "npm:6.12.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:18.2.0"],\
             ["react-infinite-scroll-component", "virtual:fb847d0027f9ad92b3b889c66268a79c071d14b7feb37999768696d406bf4b26dd076aea6826f1be6ed94ff4239ccaa5237dd3df56a84e9aec79913da2a7ba68#npm:6.1.0"],\
@@ -17133,6 +17137,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/qs-npm-6.11.0-caf1bc9dea-6e1f29dd53.zip/node_modules/qs/",\
           "packageDependencies": [\
             ["qs", "npm:6.11.0"],\
+            ["side-channel", "npm:1.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:6.12.0", {\
+          "packageLocation": "./.yarn/cache/qs-npm-6.12.0-c6571f061c-ba007fb248.zip/node_modules/qs/",\
+          "packageDependencies": [\
+            ["qs", "npm:6.12.0"],\
             ["side-channel", "npm:1.0.6"]\
           ],\
           "linkType": "HARD"\
