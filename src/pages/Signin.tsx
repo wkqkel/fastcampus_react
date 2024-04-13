@@ -39,8 +39,9 @@ function SigninPage() {
         })
       }
     },
-    [open],
+    [navigate, open],
   )
+
   return (
     <div>
       <Form onSubmit={handlleSubmit} />

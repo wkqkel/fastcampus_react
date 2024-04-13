@@ -1,7 +1,9 @@
 import Apply from '@/components/apply'
+import useAppliedCard from '@/components/apply/hooks/useAppliedCard'
 import useApplyCardMutation from '@/components/apply/hooks/useApplyCardMutation'
 import usePollApplyStatus from '@/components/apply/hooks/usePollApplyStatus'
 import useUser from '@/components/hooks/auth/useUser'
+import { useAlertContext } from '@/contexts/AlertContexts'
 import { APPLY_STATUS } from '@/models/apply'
 import { updateApplyCard } from '@/remote/apply'
 import { useState } from 'react'
@@ -11,8 +13,37 @@ function ApplyPage() {
   const navigate = useNavigate()
   const [readyToPoll, setReadyPoll] = useState(false)
 
+  const { open } = useAlertContext()
+
   const user = useUser()
   const { id } = useParams() as { id: string }
+
+  const { data } = useAppliedCard({
+    userId: user?.uid as string,
+    cardId: id,
+    options: {
+      onSuccess: (applied) => {
+        if (applied == null) {
+          return
+        }
+
+        if (applied.status === APPLY_STATUS.COMPLETE) {
+          open({
+            title: '이미 발급이 완료된 카드입니다',
+            onButtonClick: () => {
+              window.history.back()
+            },
+          })
+
+          return
+        }
+
+        setReadyPoll(true) // 카드사로 재심사요청
+      },
+      onError: () => {},
+      suspense: true,
+    },
+  })
 
   usePollApplyStatus({
     onSuccess: async () => {
@@ -48,6 +79,10 @@ function ApplyPage() {
       window.history.back()
     },
   })
+
+  if (data != null && data.status === APPLY_STATUS.COMPLETE) {
+    return null
+  }
 
   if (readyToPoll || 카드를신청중인가) {
     return <div>Loading...</div>
