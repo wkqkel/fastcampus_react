@@ -18,7 +18,7 @@ function HotelListAddButton() {
         mainImageUrl: IMAGES[Math.floor(Math.random() * IMAGES.length)],
         images: IMAGES,
         price: random(130000, 200000),
-        startRating: random(1, 5),
+        starRating: random(1, 5),
         ...HOTEL,
         ...[EVENTS[idx] != null && { events: EVENTS[idx] }],
       }

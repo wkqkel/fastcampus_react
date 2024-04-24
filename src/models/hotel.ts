@@ -7,5 +7,5 @@ export interface Hotel {
   mainImageUrl: string
   name: string
   price: number
-  startRating: number
+  starRating: number
 }
