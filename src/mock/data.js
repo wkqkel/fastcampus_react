@@ -48,7 +48,7 @@ export const EVENTS = [
     name: '단독 특가',
     tagThemeStyle: {
       fontColor: '#FFFFFF',
-      backgroundColor: '#37A8FF',
+      backgroundColor: 'red',
     },
   },
   {
@@ -67,7 +67,7 @@ export const EVENTS = [
   },
   {
     name: '핫딜',
-    promoEndTime: '2023-10-23T00:00:00+09:00',
+    promoEndTime: '2024-10-23T00:00:00+09:00',
     tagThemeStyle: {
       fontColor: '#FFFFFF',
       backgroundColor: '#1f57fa',

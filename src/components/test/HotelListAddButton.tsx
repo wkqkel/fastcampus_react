@@ -20,7 +20,7 @@ function HotelListAddButton() {
         price: random(130000, 200000),
         starRating: random(1, 5),
         ...HOTEL,
-        ...[EVENTS[idx] != null && { events: EVENTS[idx] }],
+        ...(EVENTS[idx] != null && { events: EVENTS[idx] }),
       }
     })
 
