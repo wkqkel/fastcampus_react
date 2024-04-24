@@ -37,6 +37,7 @@ function HotelListAddButton() {
 
     batch.commit()
   }
+
   return <Button onClick={handleButtonClick}>호텔 리스트 추가</Button>
 }
 
