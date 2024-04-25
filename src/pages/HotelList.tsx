@@ -1,11 +1,11 @@
-import Hotel from '@/components/hotelList/Hotel'
+import HotelItem from '@/components/hotelList/HotelItem'
 import useHotels from '@/components/hotelList/hooks/useHotels'
 import Spacing from '@/components/shared/Spacing'
 import Top from '@/components/shared/Top'
 import { Fragment } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 
-function HotelList() {
+function HotelListPage() {
   const { data: hotels, hasNextPage, loadMore } = useHotels()
 
   return (
@@ -20,7 +20,7 @@ function HotelList() {
       >
         {hotels?.map((hotel, idx) => (
           <Fragment key={hotel.id}>
-            <Hotel hotel={hotel} />
+            <HotelItem hotel={hotel} />
             {hotels.length - 1 === idx ? null : (
               <Spacing
                 size={8}
@@ -35,4 +35,4 @@ function HotelList() {
   )
 }
 
-export default HotelList
+export default HotelListPage

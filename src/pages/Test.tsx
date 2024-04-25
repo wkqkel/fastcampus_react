@@ -1,6 +1,6 @@
 import HotelListAddButton from '@/components/test/HotelListAddButton'
 
-function Test() {
+function TestPage() {
   return (
     <div>
       <HotelListAddButton />
@@ -8,4 +8,4 @@ function Test() {
   )
 }
 
-export default Test
+export default TestPage

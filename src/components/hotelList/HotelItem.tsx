@@ -1,4 +1,4 @@
-import { Hotel as IHotel } from '@/models/hotel'
+import { Hotel } from '@/models/hotel'
 import ListRow from '../shared/ListRow'
 import Flex from '../shared/Flex'
 import Text from '../shared/Text'
@@ -9,8 +9,9 @@ import Tag from '../shared/Tag'
 import { differenceInMilliseconds, parseISO } from 'date-fns'
 import formatTime from '@/utils/formatTime'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
-function Hotel({ hotel }: { hotel: IHotel }) {
+function HotelItem({ hotel }: { hotel: Hotel }) {
   const [remainedTime, setRemainedTime] = useState(0)
 
   useEffect(() => {
@@ -63,26 +64,28 @@ function Hotel({ hotel }: { hotel: IHotel }) {
 
   return (
     <div>
-      <ListRow
-        contents={
-          <Flex direction="column">
-            {tagComponent()}
-            <ListRow.Texts title={hotel.name} subTitle={hotel.comment} />
-            <Spacing size={4} />
-            <Text typography="t7" color="gray600">
-              {hotel.starRating}성급
-            </Text>
-          </Flex>
-        }
-        right={
-          <Flex direction="column" align="flex-end">
-            <img src={hotel.mainImageUrl} alt="" css={imageStyles} />
-            <Spacing size={8} />
-            <Text bold>{addDelimiter(hotel.price)}원</Text>
-          </Flex>
-        }
-        style={containerStyles}
-      />
+      <Link to={`/hotel/${hotel.id}`}>
+        <ListRow
+          contents={
+            <Flex direction="column">
+              {tagComponent()}
+              <ListRow.Texts title={hotel.name} subTitle={hotel.comment} />
+              <Spacing size={4} />
+              <Text typography="t7" color="gray600">
+                {hotel.starRating}성급
+              </Text>
+            </Flex>
+          }
+          right={
+            <Flex direction="column" align="flex-end">
+              <img src={hotel.mainImageUrl} alt="" css={imageStyles} />
+              <Spacing size={8} />
+              <Text bold>{addDelimiter(hotel.price)}원</Text>
+            </Flex>
+          }
+          style={containerStyles}
+        />
+      </Link>
     </div>
   )
 }
@@ -98,4 +101,4 @@ const imageStyles = css`
   object-fit: cover;
   margin-left: 16px;
 `
-export default Hotel
+export default HotelItem

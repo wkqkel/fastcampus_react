@@ -57,6 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-query", "virtual:4de7447b0cbd64cdfbbcac066947b5d6a2324c97eb51c8454bb11e3ad96e06e62929dd92fa003ea1c9c998491e2dee3785fccd60dcb04f2c02cd7c0d5211f004#npm:3.39.3"],\
             ["react-router-dom", "virtual:4de7447b0cbd64cdfbbcac066947b5d6a2324c97eb51c8454bb11e3ad96e06e62929dd92fa003ea1c9c998491e2dee3785fccd60dcb04f2c02cd7c0d5211f004#npm:6.22.3"],\
             ["react-scripts", "virtual:4de7447b0cbd64cdfbbcac066947b5d6a2324c97eb51c8454bb11e3ad96e06e62929dd92fa003ea1c9c998491e2dee3785fccd60dcb04f2c02cd7c0d5211f004#npm:5.0.1"],\
+            ["swiper", "npm:11.1.1"],\
             ["typescript", "patch:typescript@npm%3A5.4.5#~builtin<compat/typescript>::version=5.4.5&hash=5adc0c"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -14421,6 +14422,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-query", "virtual:4de7447b0cbd64cdfbbcac066947b5d6a2324c97eb51c8454bb11e3ad96e06e62929dd92fa003ea1c9c998491e2dee3785fccd60dcb04f2c02cd7c0d5211f004#npm:3.39.3"],\
             ["react-router-dom", "virtual:4de7447b0cbd64cdfbbcac066947b5d6a2324c97eb51c8454bb11e3ad96e06e62929dd92fa003ea1c9c998491e2dee3785fccd60dcb04f2c02cd7c0d5211f004#npm:6.22.3"],\
             ["react-scripts", "virtual:4de7447b0cbd64cdfbbcac066947b5d6a2324c97eb51c8454bb11e3ad96e06e62929dd92fa003ea1c9c998491e2dee3785fccd60dcb04f2c02cd7c0d5211f004#npm:5.0.1"],\
+            ["swiper", "npm:11.1.1"],\
             ["typescript", "patch:typescript@npm%3A5.4.5#~builtin<compat/typescript>::version=5.4.5&hash=5adc0c"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -18907,6 +18909,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["csso", "npm:4.2.0"],\
             ["picocolors", "npm:1.0.0"],\
             ["stable", "npm:0.1.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["swiper", [\
+        ["npm:11.1.1", {\
+          "packageLocation": "./.yarn/cache/swiper-npm-11.1.1-fbb4753780-fb3b12034f.zip/node_modules/swiper/",\
+          "packageDependencies": [\
+            ["swiper", "npm:11.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
