@@ -1,6 +1,7 @@
 import Carousel from '@/components/hotel/Carousel'
 import Contents from '@/components/hotel/Contents'
 import Map from '@/components/hotel/Map'
+import RecommandHotels from '@/components/hotel/RecommandHotels'
 import Rooms from '@/components/hotel/Rooms'
 import useHotel from '@/components/hotel/hooks/useHotel'
 import Top from '@/components/shared/Top'
@@ -15,7 +16,7 @@ function HotelPage() {
     return <div>Loading</div>
   }
 
-  const { name, comment, images, contents, location } = data
+  const { name, comment, images, contents, location, recommandHotels } = data
   return (
     <div>
       <Top title={name} subTitle={comment} />
@@ -23,6 +24,7 @@ function HotelPage() {
       <Rooms hotelId={id} />
       <Contents contents={contents} />
       <Map location={location} />
+      <RecommandHotels recommandHotels={recommandHotels} />
     </div>
   )
 }
