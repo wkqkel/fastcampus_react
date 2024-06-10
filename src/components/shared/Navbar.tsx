@@ -5,6 +5,7 @@ import { colors } from '@/styles/colorPalette'
 import Flex from '@shared/Flex'
 import Button from './Button'
 import { useCallback } from 'react'
+import useUser from '@/hooks/auth/useUser'
 
 function Navbar() {
   const location = useLocation()
@@ -12,14 +13,21 @@ function Navbar() {
     ['/signup', 'signin'].includes(location.pathname) === false
 
   // @TODO
-  const user = null
+  const user = useUser()
 
   const renderButton = useCallback(() => {
     if (user != null) {
       return (
         <Link to="/my">
-          {/* @TODO */}
-          <img src="" alt="" />
+          <img src={
+            user.photoURL ??
+            'https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-64.png'
+          }
+            alt="유저의 이미지"
+            width={40}
+            height={40}
+            style={{ borderRadius: '100%' }}
+          />
         </Link>
       )
     }
